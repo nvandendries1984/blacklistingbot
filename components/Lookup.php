@@ -23,7 +23,7 @@ class Lookup extends ComponentBase
         $searchUsername = input('searchUsername');
     
         // Search for the username in the database
-        $userFound = Database::where('username', $searchUsername)->first();
+        $userFound = Database::whereRaw("BINARY username = ?", [$searchUsername])->first();
     
         return [
             '#searchResults' => $this->renderPartial('@search-results', ['userFound' => $userFound]),
