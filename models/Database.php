@@ -1,6 +1,7 @@
 <?php namespace NielsVanDenDries\Blacklistingbot\Models;
 
 use Model;
+use Carbon\Carbon;
 
 /**
  * Model
@@ -26,5 +27,19 @@ class Database extends Model
      */
     public $rules = [
     ];
+
+    public function getWarningAttribute()
+    {
+        $registrationDate = Carbon::parse($this->created_at);
+        $now = Carbon::now();
+        $daysDifference = $registrationDate->diffInDays($now);
+    
+        if ($daysDifference > 30) {
+            return 'Username registered for more than 30 days';
+        } else {
+            $daysLeft = 30 - $daysDifference;
+            return "$daysLeft days left, before removal";
+        }
+    }
 
 }

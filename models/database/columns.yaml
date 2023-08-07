@@ -1,20 +1,8 @@
 columns:
-    id:
-        label: id
-        type: number
-        invisible: true
-    created_at:
-        label: created_at
-        type: datetime
-        invisible: true
-    updated_at:
-        label: updated_at
-        type: datetime
-        invisible: true
-    deleted_at:
-        label: deleted_at
-        type: datetime
-        invisible: true
+    warning:
+        label: Warning
+        type: text
+        sortable: true
     username:
         label: '<i class="bi bi-person"></i> Username'
         type: text
@@ -35,3 +23,20 @@ columns:
         type: number
         searchable: false
         sortable: true
+    id:
+        label: id
+        type: number
+        invisible: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        invisible: true
+

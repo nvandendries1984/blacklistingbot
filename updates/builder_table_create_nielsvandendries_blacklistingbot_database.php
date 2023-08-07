@@ -13,6 +13,8 @@ class BuilderTableCreateNielsvandendriesBlacklistingbotDatabase extends Migratio
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();
+            $table->integer('count')->nullable();
+            $table->string('warning')->nullable();
             $table->string('username');
             $table->text('description');
             $table->text('tags');
