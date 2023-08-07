@@ -4,10 +4,10 @@
         <h5 class="card-title"><i class="bi bi-exclamation-triangle-fill"></i> Username: {{ userFound.username }}</h5>
         <p class="card-text">
             <strong>Number of times registered:</strong> {{ userFound.count }}<br>
+            {% if userFound.tags %}<strong>Tags:</strong> {{ userFound.tags }}{% endif %}<br>
             <strong>Updated at:</strong> {{ userFound.updated_at }}<br>
             <strong>First registration at:</strong> {{ userFound.created_at }}<br>
-            {% if userFound.description %}<strong>Description:</strong> {{ userFound.description|raw }}{% endif %}<br>
-            {% if userFound.tags %}<strong>Tags:</strong> {{ userFound.tags }}{% endif %}<br>
+            {% if userFound.description %}<strong>Description:</strong> {{ userFound.description|raw }}{% endif %}
         </p>
     </div>
   </div>
