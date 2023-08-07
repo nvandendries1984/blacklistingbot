@@ -1,10 +1,13 @@
 {% if userFound %}
 <div class="card text-bg-danger" style="width: 50%;">
     <div class="card-body">
-        <h5 class="card-title">Username: {{ userFound.username }}</h5>
+        <h5 class="card-title"><i class="bi bi-exclamation-triangle-fill"></i> Username: {{ userFound.username }}</h5>
         <p class="card-text">
-            Number of times registered: {{ userFound.count }}<br>
-            Updated At: {{ userFound.updated_at }}
+            <strong>Number of times registered:</strong> {{ userFound.count }}<br>
+            <strong>Updated at:</strong> {{ userFound.updated_at }}<br>
+            <strong>First registration at:</strong> {{ userFound.created_at }}<br>
+            {% if userFound.description %}<strong>Description:</strong> {{ userFound.description|raw }}{% endif %}<br>
+            {% if userFound.tags %}<strong>Tags:</strong> {{ userFound.tags }}{% endif %}<br>
         </p>
     </div>
   </div>
