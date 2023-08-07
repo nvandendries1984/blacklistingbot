@@ -16,17 +16,22 @@ columns:
         type: datetime
         invisible: true
     username:
-        label: <i class="bi bi-person"></i> Username
+        label: '<i class="bi bi-person"></i> Username'
         type: text
         searchable: true
         sortable: true
     description:
-        label: <i class="bi bi-chat-left-text"></i> Description
+        label: '<i class="bi bi-chat-left-text"></i> Description'
         type: summary
         searchable: true
         sortable: true
     tags:
-        label: <i class="bi bi-tag"></i> Tags
+        label: '<i class="bi bi-tag"></i> Tags'
         type: text
         searchable: true
+        sortable: true
+    count:
+        label: Count
+        type: number
+        searchable: false
         sortable: true

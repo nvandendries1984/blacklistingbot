@@ -18,7 +18,8 @@ class Database extends Model
     /**
      * @var string table in the database used by the model.
      */
-    public $table = 'nielsvandendries_blacklistingbot_database';
+    protected $table = 'nielsvandendries_blacklistingbot_database';
+    protected $fillable = ['username', 'description', 'tags'];
 
     /**
      * @var array rules for validation.

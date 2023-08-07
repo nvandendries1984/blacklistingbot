@@ -26,6 +26,9 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
+        return [
+            'NielsVanDenDries\Blacklistingbot\Components\Registration' => 'Registration',
+        ];
     }
 
     /**
