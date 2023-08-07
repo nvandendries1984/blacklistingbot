@@ -28,6 +28,7 @@ class Plugin extends PluginBase
     {
         return [
             'NielsVanDenDries\Blacklistingbot\Components\Registration' => 'Registration',
+            'NielsVanDenDries\Blacklistingbot\Components\Lookup' => 'Lookup',
         ];
     }
 

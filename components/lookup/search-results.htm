@@ -1,0 +1,13 @@
+{% if userFound %}
+<div class="card text-bg-danger" style="width: 50%;">
+    <div class="card-body">
+        <h5 class="card-title">Username: {{ userFound.username }}</h5>
+        <p class="card-text">
+            Number of times registered: {{ userFound.count }}<br>
+            Updated At: {{ userFound.updated_at }}
+        </p>
+    </div>
+  </div>
+  {% else %}
+    <p>Username not found</p>
+{% endif %}
