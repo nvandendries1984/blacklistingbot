@@ -1,0 +1,11 @@
+name: Database
+modelClass: NielsVanDenDries\Blacklistingbot\Models\Database
+form: $/nielsvandendries/blacklistingbot/models/database/fields.yaml
+defaultRedirect: nielsvandendries/blacklistingbot/database
+create:
+    redirect: 'nielsvandendries/blacklistingbot/database/update/:id'
+    redirectClose: nielsvandendries/blacklistingbot/database
+update:
+    redirect: nielsvandendries/blacklistingbot/database
+    redirectClose: nielsvandendries/blacklistingbot/database
+preview: {  }

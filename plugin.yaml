@@ -1,0 +1,17 @@
+plugin:
+    name: 'nielsvandendries.blacklistingbot::lang.plugin.name'
+    description: 'nielsvandendries.blacklistingbot::lang.plugin.description'
+    author: 'Niels van den Dries'
+    icon: oc-icon-bomb
+    homepage: 'https://blacklistingbot.com/'
+permissions:
+    manager:
+        tab: 'nielsvandendries.blacklistingbot::lang.plugin.name'
+        label: Manager
+navigation:
+    blacklistedbot-main:
+        label: 'nielsvandendries.blacklistingbot::lang.plugin.name'
+        url: nielsvandendries/blacklistingbot/database
+        icon: icon-bomb
+        permissions:
+            - manager

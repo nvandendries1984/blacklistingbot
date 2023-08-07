@@ -1,0 +1,5 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table nielsvandendries_blacklistingbot_database'
+    - builder_table_create_nielsvandendries_blacklistingbot_database.php
