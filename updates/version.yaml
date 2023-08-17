@@ -3,3 +3,6 @@ v1.0.1:
 v1.0.2:
     - 'Created table nielsvandendries_blacklistingbot_database'
     - builder_table_create_nielsvandendries_blacklistingbot_database.php
+v1.0.3:
+    - 'Created table nielsvandendries_blacklistingbot_request'
+    - builder_table_create_nielsvandendries_blacklistingbot_request.php

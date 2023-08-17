@@ -1,0 +1,24 @@
+columns:
+    username:
+        label: username
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: type
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: description
+        type: summary
+        searchable: false
+        invisible: true
+    created_at:
+        label: created_at
+        type: datetime
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        sortable: true

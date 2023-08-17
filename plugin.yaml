@@ -11,7 +11,20 @@ permissions:
 navigation:
     blacklistedbot-main:
         label: 'nielsvandendries.blacklistingbot::lang.plugin.name'
-        url: nielsvandendries/blacklistingbot/database
+        url: /
         icon: icon-bomb
         permissions:
             - manager
+        sideMenu:
+            side-menu-item-database:
+                label: Database
+                url: nielsvandendries/blacklistingbot/database
+                icon: icon-list
+                permissions:
+                    - manager
+            side-menu-item-requests:
+                label: Requests
+                url: nielsvandendries/blacklistingbot/requests
+                icon: icon-ticket
+                permissions:
+                    - manager

@@ -1,0 +1,21 @@
+fields:
+    username:
+        label: Username
+        span: left
+        required: 1
+        type: text
+    type:
+        label: 'Request type'
+        options:
+            Removal: Removal
+            Review: Review
+        showSearch: true
+        span: auto
+        required: 1
+        type: dropdown
+    description:
+        label: Description
+        span: full
+        size: small
+        required: 1
+        type: richeditor

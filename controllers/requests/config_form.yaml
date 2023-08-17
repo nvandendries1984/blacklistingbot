@@ -1,0 +1,11 @@
+name: Requests
+modelClass: NielsVanDenDries\Blacklistingbot\Models\Requests
+form: $/nielsvandendries/blacklistingbot/models/requests/fields.yaml
+defaultRedirect: nielsvandendries/blacklistingbot/requests
+create:
+    redirect: 'nielsvandendries/blacklistingbot/requests/update/:id'
+    redirectClose: nielsvandendries/blacklistingbot/requests
+update:
+    redirect: nielsvandendries/blacklistingbot/requests
+    redirectClose: nielsvandendries/blacklistingbot/requests
+preview: {  }
