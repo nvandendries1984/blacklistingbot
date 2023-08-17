@@ -9,8 +9,8 @@ class Registration extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'registration Component',
-            'description' => 'No description provided yet...'
+            'name' => 'Registration Component',
+            'description' => 'For registration of usernames'
         ];
     }
 
