@@ -2,15 +2,14 @@
 
 use Cms\Classes\ComponentBase;
 use Nielsvandendries\Blacklistingbot\Models\Requests;
-use Flash;
 
-class Requests extends ComponentBase
+class Unlistingrequest extends ComponentBase
 {
     public function componentDetails()
     {
         return [
-            'name' => 'Requests Component',
-            'description' => 'Where recorded usernames can be reviewd'
+            'name' => 'Unlisting Request Form',
+            'description' => 'Form for unlisting'
         ];
     }
 
