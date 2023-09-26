@@ -4,9 +4,9 @@ columns:
         type: text
         searchable: true
         sortable: true
-    type:
-        label: Type
-        type: text
+    count:
+        label: Requests
+        type: number
         searchable: true
         sortable: true
     description:
@@ -15,10 +15,10 @@ columns:
         searchable: false
         invisible: true
     created_at:
-        label: Created at
+        label: 'Created at'
         type: datetime
         sortable: true
     updated_at:
-        label: Updated at
+        label: 'Updated at'
         type: datetime
         sortable: true

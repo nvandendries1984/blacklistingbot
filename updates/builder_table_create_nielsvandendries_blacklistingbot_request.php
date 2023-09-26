@@ -13,8 +13,9 @@ class BuilderTableCreateNielsvandendriesBlacklistingbotRequest extends Migration
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();
+            $table->string('count')->nullable();
             $table->string('username');
-            $table->string('type');
+            $table->string('type')->nullable();
             $table->text('description');
         });
     }
