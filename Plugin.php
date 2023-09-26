@@ -1,10 +1,9 @@
-
 <?php namespace NielsVanDenDries\Blacklistingbot;
 
 use System\Classes\PluginBase;
 
 /**
- * Plugin created by NvandenDries.nl
+ * Plugin class
  */
 class Plugin extends PluginBase
 {
