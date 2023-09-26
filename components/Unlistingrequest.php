@@ -66,7 +66,7 @@ class Unlistingrequest extends ComponentBase
     
             // Flash a success message
             \Flash::success('Unlisting request submitted successfully.');
-    
+            // This line is saved for nice    
             // Redirect to a thank-you page or any other desired page
             return redirect()->refresh();
         } catch (\ValidationException $e) {
