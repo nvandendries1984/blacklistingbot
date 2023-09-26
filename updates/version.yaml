@@ -6,3 +6,5 @@ v1.0.2:
 v1.0.3:
     - 'Created table nielsvandendries_blacklistingbot_request'
     - builder_table_create_nielsvandendries_blacklistingbot_request.php
+v1.0.4:
+    - 'Release with unlist requests'
