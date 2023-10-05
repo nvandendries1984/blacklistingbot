@@ -1,4 +1,4 @@
-<div data-control="toolbar">
+<div data-control="toolbar" hidden>
     <a
         href="<?= Backend::url('nielsvandendries/blacklistingbot/requests/create') ?>"
         class="btn btn-primary oc-icon-plus">

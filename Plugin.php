@@ -30,6 +30,7 @@ class Plugin extends PluginBase
             'NielsVanDenDries\Blacklistingbot\Components\Registration' => 'Registration',
             'NielsVanDenDries\Blacklistingbot\Components\Lookup' => 'Lookup',
             'NielsVanDenDries\Blacklistingbot\Components\Unlistingrequest' => 'Unlistingrequest',
+            'NielsVanDenDries\Blacklistingbot\Components\Privatelist' => 'Privatelist',
         ];
     }
 

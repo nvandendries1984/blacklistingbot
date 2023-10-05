@@ -1,29 +1,50 @@
 <?php namespace NielsVanDenDries\Blacklistingbot\Models;
 
 use Model;
+use RainLab\User\Facades\Auth; // Voeg deze regel bovenaan je bestand toe om de Auth-facade te gebruiken.
+use Carbon\Carbon;
 
-/**
- * Model
- */
 class Privatedatabasemodel extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
 
-    /**
-     * @var array dates to cast from the database.
-     */
     protected $dates = ['deleted_at'];
 
-    /**
-     * @var string table in the database used by the model.
-     */
-    public $table = 'nielsvandendries_blacklistingbot_privatedatabase';
+    protected $table = 'nielsvandendries_blacklistingbot_privatedatabase';
+    protected $fillable = ['username', 'description', 'tags'];
 
-    /**
-     * @var array rules for validation.
-     */
     public $rules = [
     ];
+    
+    public $belongsTo = [
+        'user' => ['RainLab\User\Models\User', 'key' => 'user_id']
+    ];
+    
+    public function getPrivateDataForCurrentUser()
+    {
+        $user = Auth::getUser();
+        if ($user) {
+            // Haal privégegevens op voor de ingelogde gebruiker
+            $privateData = Privatedatabasemodel::where('user_id', $user->id)->get();
+            return $privateData;
+        } else {
+            // Gebruiker is niet ingelogd, retourneer lege set of geef een foutmelding terug
+            return [];
+        }
+    }
 
+    public function getWarningAttribute()
+    {
+        $registrationDate = Carbon::parse($this->created_at);
+        $now = Carbon::now();
+        $daysDifference = $registrationDate->diffInDays($now);
+    
+        if ($daysDifference > 30) {
+            return 'Username registered for more than 30 days';
+        } else {
+            $daysLeft = 30 - $daysDifference;
+            return "$daysLeft days left, before removal";
+        }
+    }
 }

@@ -2,6 +2,7 @@
 
 use Cms\Classes\ComponentBase;
 use Nielsvandendries\Blacklistingbot\Models\Database;
+use Nielsvandendries\Blacklistingbot\Models\Privatedatabasemodel;
 
 class Lookup extends ComponentBase
 {
