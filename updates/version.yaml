@@ -8,3 +8,6 @@ v1.0.3:
     - builder_table_create_nielsvandendries_blacklistingbot_request.php
 v1.0.4:
     - 'Release with unlist requests'
+v1.0.5:
+    - 'Created table nielsvandendries_blacklistingbot_privatedatabase'
+    - builder_table_create_nielsvandendries_blacklistingbot_privatedatabase.php

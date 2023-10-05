@@ -1,0 +1,32 @@
+fields:
+    username:
+        label: 'Listed Username'
+        span: auto
+        disabled: 1
+        readOnly: 1
+        required: 0
+        type: text
+    tags:
+        label: 'Tag List'
+        mode: string
+        separator: comma
+        customTags: true
+        useKey: false
+        span: auto
+        disabled: 1
+        hidden: 0
+        required: 0
+        type: taglist
+    description:
+        label: Description
+        size: small
+        span: auto
+        disabled: 1
+        readOnly: 1
+        type: richeditor
+    count:
+        label: Count
+        span: auto
+        readOnly: 1
+        disabled: 1
+        type: number

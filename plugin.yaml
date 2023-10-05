@@ -28,3 +28,9 @@ navigation:
                 icon: icon-ticket
                 permissions:
                     - manager
+            side-menu-item-private:
+                label: 'Private Blacklist'
+                url: nielsvandendries/blacklistingbot/privatedatabasecontroller
+                icon: icon-list
+                permissions:
+                    - manager

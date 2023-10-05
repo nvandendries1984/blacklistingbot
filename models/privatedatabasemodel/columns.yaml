@@ -1,0 +1,42 @@
+columns:
+
+    username:
+        label: '<i class="bi bi-person"></i> Username'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: '<i class="bi bi-chat-left-text"></i> Description'
+        type: summary
+        searchable: true
+        sortable: true
+    tags:
+        label: '<i class="bi bi-tag"></i> Tags'
+        type: text
+        searchable: true
+        sortable: true
+    count:
+        label: Count
+        type: number
+        searchable: false
+        sortable: true
+    id:
+        label: id
+        type: number
+        invisible: true
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        invisible: true
+    warning:
+        label: Warning
+        type: text
+        sortable: true

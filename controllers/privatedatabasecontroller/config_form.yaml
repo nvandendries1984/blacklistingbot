@@ -1,0 +1,11 @@
+name: Privatedatabasecontroller
+modelClass: NielsVanDenDries\Blacklistingbot\Models\Privatedatabasemodel
+form: $/nielsvandendries/blacklistingbot/models/privatedatabasemodel/fields.yaml
+defaultRedirect: nielsvandendries/blacklistingbot/privatedatabasecontroller
+create:
+    redirect: 'nielsvandendries/blacklistingbot/privatedatabasecontroller/update/:id'
+    redirectClose: nielsvandendries/blacklistingbot/privatedatabasecontroller
+update:
+    redirect: nielsvandendries/blacklistingbot/privatedatabasecontroller
+    redirectClose: nielsvandendries/blacklistingbot/privatedatabasecontroller
+preview: {  }
